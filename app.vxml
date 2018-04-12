@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version = "2.1" >
+    <menu dtmf="true">
+        <prompt>
+            Welcome to the voting system. A survey is active at this point.
+            <enumerate>
+               For <value expr="_prompt"/>, say <value expr="_prompt"/> or press <value expr="_dtmf"/>.
+            </enumerate>
+        </prompt>
+        <choice accept="approximate" next="http://webhosting.voxeo.net/204374/www/results.vxml">
+            show results
+        </choice>
+        <choice accept="approximate" next="http://webhosting.voxeo.net/204374/www/end.vxml">
+            end survey
+        </choice>
+    </menu>
+</vxml>
