@@ -7,10 +7,10 @@
                For <value expr="_prompt"/>, say <value expr="_prompt"/> or press <value expr="_dtmf"/>.
             </enumerate>
         </prompt>
-        <choice accept="approximate" next="http://webhosting.voxeo.net/204374/www/results.vxml">
+        <choice accept="approximate" next="https://raw.githubusercontent.com/pawelulita/ict4d/master/results.vxml?token=AFkbpYvgiiMd-uyecDeK4cqwTQNUFNMAks5a2QCXwA%3D%3D">
             show results
         </choice>
-        <choice accept="approximate" next="http://webhosting.voxeo.net/204374/www/end.vxml">
+        <choice accept="approximate" next="https://raw.githubusercontent.com/pawelulita/ict4d/master/end.vxml?token=AFkbpWarTgS_iaPmrWKDLPC5SRIMXlFcks5a2QB-wA%3D%3D">
             end survey
         </choice>
     </menu>
