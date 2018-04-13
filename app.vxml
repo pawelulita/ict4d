@@ -2,6 +2,9 @@
 <vxml version = "2.1" >
     <menu dtmf="true">
         <prompt>
+            <audio src="http://www.hansdieterhiep.nl/2018/bonjour.wav">
+                Bonjour (is not available)!
+            </audio>
             Welcome to the voting system. A survey is active at this point.
             <enumerate>
                For <value expr="_prompt"/>, say <value expr="_prompt"/> or press <value expr="_dtmf"/>.
