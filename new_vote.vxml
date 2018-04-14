@@ -7,7 +7,7 @@
                 Speak the number in minutes.
             </prompt>
             <filled>
-                A new vote has been created. It will automatically close in <value expr="new" class="number" mode="recorded"/> minutes.
+                A new vote has been created. It will automatically close in <value expr="create_new" class="number" mode="recorded"/> minutes.
                 <goto next="https://raw.githubusercontent.com/pawelulita/ict4d/master/exit.vxml?token=AEqF4ZaegAs2NNyL6gZs7O7MFj_v2TFaks5a2ySCwA%3D%3D"/>
             </filled>
         </field>
