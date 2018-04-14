@@ -19,27 +19,29 @@
         </field>
     </form>
     
-    <form id="create_new_confirm" name="confirmed" type="boolean">
-        <prompt>
-            Are you sure?
-            For yes, say yes or press 1.
-            For no, say no or press 2.
-        </prompt>
-        <filled>
-            <if cond="confirmed">
-                You have just created a new vote.
-                <goto next="https://raw.githubusercontent.com/pawelulita/ict4d/master/exit.vxml?token=AEqF4ZaegAs2NNyL6gZs7O7MFj_v2TFaks5a2ySCwA%3D%3D"/>
-            <else />
-                You haven't created a new vote.
-                <goto next="https://raw.githubusercontent.com/pawelulita/ict4d/master/exit.vxml?token=AEqF4ZaegAs2NNyL6gZs7O7MFj_v2TFaks5a2ySCwA%3D%3D"/>
-            </if>
-        </filled>
-        <noinput>
-            Sorry, I didn't get that.
-        </noinput>
-        <nomatch>
-            Sorry, I didn't get that.
-        </nomatch>
+    <form id="create_new_confirm">
+        <field name="confirmed" type="boolean">
+            <prompt>
+                Are you sure?
+                For yes, say yes or press 1.
+                For no, say no or press 2.
+            </prompt>
+            <filled>
+                <if cond="confirmed">
+                    You have just created a new vote.
+                    <goto next="https://raw.githubusercontent.com/pawelulita/ict4d/master/exit.vxml?token=AEqF4ZaegAs2NNyL6gZs7O7MFj_v2TFaks5a2ySCwA%3D%3D"/>
+                <else />
+                    You haven't created a new vote.
+                    <goto next="https://raw.githubusercontent.com/pawelulita/ict4d/master/exit.vxml?token=AEqF4ZaegAs2NNyL6gZs7O7MFj_v2TFaks5a2ySCwA%3D%3D"/>
+                </if>
+            </filled>
+            <noinput>
+                Sorry, I didn't get that.
+            </noinput>
+            <nomatch>
+                Sorry, I didn't get that.
+            </nomatch>
+        </field>
     </form>
 </vxml>
 
