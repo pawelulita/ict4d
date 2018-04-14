@@ -30,7 +30,7 @@
     
     <form id="exit">
         <block>
-            Thanks for using BipVote the BipVote system.
+            Thanks for using BipVote! Goodbye.
             <exit/>
         </block>
     </form>
