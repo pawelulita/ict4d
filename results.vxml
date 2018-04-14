@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vxml version="2.1">
     <form>
-        <block>10 people voted for A, 20 people voted for B.</block>
+        <block>
+            10 people voted for A, 20 people voted for B.
+            <goto next="https://raw.githubusercontent.com/pawelulita/ict4d/master/app.vxml?token=AEqF4TOGeJfVVdJbEb6Cf5LXG_2zDkndks5a2yhHwA%3D%3D#vote_active"/>
+        </block>
     </form>
 </vxml>
 
