@@ -28,6 +28,31 @@
         </choice>
     </menu>
     
+    <form id="end_vote">
+        <field name="end_vote" type="boolean">
+            <prompt>
+                Do you really want to end the current vote?
+                For yes, say yes or press 1.
+                For no, say no or press 2.
+            </prompt>
+            <filled>
+                <if cond="end_vote">
+                    You have just ended the current vote.
+                    <goto next="#vote_inactive"/>
+                <else />
+                    The current vote stays active.
+                    <goto next="#vote_active"/>
+                </if>
+            </filled>
+            <noinput>
+                Sorry, I didn't get that.
+            </noinput>
+            <nomatch>
+                Sorry, I didn't get that.
+            </nomatch>
+        </field>
+    </form>
+    
     <menu dtmf="true" id="vote_inactive">
         <prompt>
             No vote is currently active. In the previous vote, 5 people voted 'yes' and 7 people voted 'no'.
