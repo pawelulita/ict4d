@@ -34,7 +34,7 @@
             Would you like to start a new vote? If you do, say 'yes' or press 1. If you do not, say 'no'
             or press '2'.
         </prompt>
-        <choice next="https://raw.githubusercontent.com/pawelulita/ict4d/master/new_vote.vxml?token=AEqF4U5PmT0P0xFrrvJB1G1mdx9GguSCks5a2zgSwA%3D%3D">
+        <choice next="https://raw.githubusercontent.com/pawelulita/ict4d/master/new_vote.vxml?token=AEqF4b0wWJc5AJEtOKHgTFxWg3YRGZ1_ks5a2zidwA%3D%3D">
             yes
         </choice>
         <choice next="https://raw.githubusercontent.com/pawelulita/ict4d/master/exit.vxml?token=AEqF4ZaegAs2NNyL6gZs7O7MFj_v2TFaks5a2ySCwA%3D%3D">
