@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vxml version="2.1">
-    <form id="create_new">
-        <field name="create_new" type="number">
+    <form id="create_new_form">
+        <field name="create_new_field" type="number">
             <prompt>
                 A new vote is about to be created. For how many minutes should the vote run?
                 Speak the number in minutes.
@@ -31,7 +31,7 @@
                     You have just created a new vote.
                     <goto next="https://raw.githubusercontent.com/pawelulita/ict4d/master/exit.vxml?token=AEqF4ZaegAs2NNyL6gZs7O7MFj_v2TFaks5a2ySCwA%3D%3D"/>
                 <else />
-                    <goto next="#create_new"/>
+                    <goto next="#create_new_form"/>
                 </if>
             </filled>
             <noinput>
