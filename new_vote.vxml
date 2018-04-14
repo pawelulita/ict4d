@@ -8,7 +8,7 @@
             </prompt>
             <filled>
                 You're about to create a new vote that closes in <value expr="create_new" class="number" mode="recorded"/> minutes.
-                <goto next="create_new_confirm"/>
+                <goto next="#create_new_confirm"/>
             </filled>
             <noinput>
                 Sorry, I didn't get that.
