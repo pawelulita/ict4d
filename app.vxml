@@ -6,7 +6,7 @@
                 Bonjour (is not available)!
             </audio>
             Welcome to the BipVote voting system.
-            <goto next="#vote_active"/>
+            <goto next="#vote_active"/> <!-- hardcoded for now -->
         </block>
     </form>
 
@@ -23,15 +23,22 @@
         <choice accept="approximate" next="https://raw.githubusercontent.com/pawelulita/ict4d/master/end.vxml?token=AFkbpWarTgS_iaPmrWKDLPC5SRIMXlFcks5a2QB-wA%3D%3D">
             end vote
         </choice>
-        <choice accept="approximate" next="#exit">
+        <choice accept="approximate" next="https://raw.githubusercontent.com/pawelulita/ict4d/master/exit.vxml?token=AEqF4ZaegAs2NNyL6gZs7O7MFj_v2TFaks5a2ySCwA%3D%3D">
             exit
         </choice>
     </menu>
     
-    <form id="exit">
-        <block>
-            Thanks for using BipVote! Goodbye.
-            <exit/>
-        </block>
-    </form>
+    <menu dtmf="true" id="vote_inactive">
+        <prompt>
+            No vote is currently active. In the previous vote, 5 people voted 'yes' and 7 people voted 'no'.
+            Would you like to start a new vote? If you do, say 'yes' or press 1. If you don't, say 'no'
+            or press '2'.
+        </prompt>
+        <choice next="https://raw.githubusercontent.com/pawelulita/ict4d/master/end.vxml?token=AFkbpWarTgS_iaPmrWKDLPC5SRIMXlFcks5a2QB-wA%3D%3D">
+            yes
+        </choice>
+        <choice next="https://raw.githubusercontent.com/pawelulita/ict4d/master/exit.vxml?token=AEqF4ZaegAs2NNyL6gZs7O7MFj_v2TFaks5a2ySCwA%3D%3D">
+            no
+        </choice>
+    </menu>
 </vxml>
