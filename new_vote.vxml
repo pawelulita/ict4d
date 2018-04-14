@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vxml version="2.1">
-    <form>
+    <form id="create_new">
         <field name="create_new" type="number">
             <prompt>
                 A new vote is about to be created. For how many minutes should the vote run?
