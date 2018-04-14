@@ -31,7 +31,7 @@
     <menu dtmf="true" id="vote_inactive">
         <prompt>
             No vote is currently active. In the previous vote, 5 people voted 'yes' and 7 people voted 'no'.
-            Would you like to start a new vote? If you do, say 'yes' or press 1. If you don't, say 'no'
+            Would you like to start a new vote? If you do, say 'yes' or press 1. If you do not, say 'no'
             or press '2'.
         </prompt>
         <choice next="https://raw.githubusercontent.com/pawelulita/ict4d/master/new_vote.vxml?token=AEqF4dX2fdg_sXTsK4obmgSSUQLW4NaGks5a2y_iwA%3D%3D">
