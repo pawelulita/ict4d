@@ -5,14 +5,14 @@
             <audio src="http://www.hansdieterhiep.nl/2018/bonjour.wav">
                 Bonjour (is not available)!
             </audio>
-            Welcome to the voting system.
+            Welcome to the BipVote voting system.
             <goto next="#vote_active"/>
         </block>
     </form>
 
     <menu dtmf="true" id="vote_active">
         <prompt>
-            A vote is active at this point.
+            A vote is active at this point and runs for 12 more minutes. What would you like to do?
             <enumerate>
                For <value expr="_prompt"/>, say <value expr="_prompt"/> or press <value expr="_dtmf"/>.
             </enumerate>
@@ -21,7 +21,17 @@
             show results
         </choice>
         <choice accept="approximate" next="https://raw.githubusercontent.com/pawelulita/ict4d/master/end.vxml?token=AFkbpWarTgS_iaPmrWKDLPC5SRIMXlFcks5a2QB-wA%3D%3D">
-            end survey
+            end vote
+        </choice>
+        <choice accept="approximate" next="#exit">
+            exit
         </choice>
     </menu>
+    
+    <form id="exit">
+        <block>
+            Thanks for using BipVote the BipVote system.
+            <exit/>
+        </block>
+    </form>
 </vxml>
