@@ -5,8 +5,8 @@
             A new vote is about to be created. For how many minutes should the vote run?
             Use your keypad to enter the number of minutes, followed by the pound key.
             <filled>
-                A new vote has been created. It will automatically close in <value expr="new"/> minutes.
-                <goto next="https://raw.githubusercontent.com/pawelulita/ict4d/master/exit.vxml?token=AEqF4ZaegAs2NNyL6gZs7O7MFj_v2TFaks5a2ySCwA%3D%3D"/>
+                A new vote has been created. It will automatically close in <value expr="new" class="digits" mode="recorded"/> minutes.
+                   <goto next="https://raw.githubusercontent.com/pawelulita/ict4d/master/exit.vxml?token=AEqF4ZaegAs2NNyL6gZs7O7MFj_v2TFaks5a2ySCwA%3D%3D"/>
             </filled>
         </field>
     </form>
