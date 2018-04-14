@@ -7,7 +7,7 @@
                 Speak the number in minutes.
             </prompt>
             <filled>
-                You're about to create a new vote that closes in <value expr="create_new" class="number" mode="recorded"/> minutes.
+                You're about to create a new vote that closes in <value expr="create_new_field" class="number" mode="recorded"/> minutes.
                 <goto next="#create_new_confirm"/>
             </filled>
             <noinput>
