@@ -6,8 +6,9 @@
                 Bonjour (is not available)!
             </audio>
             Welcome to the voting system.
+            My sprinkler goes like this stststststststststststststststststststststststst
+            <goto next="#vote_active"/>
         </block>
-        <goto next="#vote_active"/>
     </form>
 
     <menu dtmf="true" id="vote_active">
